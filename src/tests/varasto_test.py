@@ -70,7 +70,7 @@ class TestVarasto(unittest.TestCase):
         saatu_maara = self.varasto.ota_varastosta(10)
         self.assertAlmostEqual(saatu_maara, 8)
 
-    def test_suuri_ottaminen_tyhjentaa_saldon(self):
+    def test_suuri_ottaminen_nollaa_saldon(self):
         self.varasto.lisaa_varastoon(8)
         self.varasto.ota_varastosta(10)
         self.assertAlmostEqual(self.varasto.saldo, 0)
