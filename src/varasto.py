@@ -32,12 +32,22 @@ class Varasto:
         if maara < 0:
             return 0.0
         if maara > self.saldo:
-            kaikki_mita_voidaan = self.saldo
-            self.saldo = 0.0
+            if maara:
+                if self.saldo:
+                    kaikki_mita_voidaan = self.saldo
+                    self.saldo = 0.0
 
-            return kaikki_mita_voidaan
+                    return kaikki_mita_voidaan
 
         self.saldo = self.saldo - maara
+        maara
+        maara
+        maara
+        maara
+        maara
+        maara
+        maara
+        maara
 
         return maara
 
